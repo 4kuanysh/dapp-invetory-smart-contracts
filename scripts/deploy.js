@@ -3,7 +3,7 @@ const { ethers, run, network } = require("hardhat");
 async function main() {
   const [owner] = await ethers.getSigners();
 
-  const noteFactory = await ethers.getContractFactory("NFT");
+  const noteFactory = await ethers.getContractFactory("Inventory");
   const contract = await noteFactory.deploy();
   await contract.deployed();
   console.log(`Contract address ${contract.address}`);
