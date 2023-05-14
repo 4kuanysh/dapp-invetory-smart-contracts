@@ -25,9 +25,9 @@ contract LogisticsContract {
     }
 
     mapping(uint256 => Shipment) public shipments;
-    mapping(address => bool) creatorsWhiteList;
-    mapping(address => bool) transactorsWhiteList;
-    mapping(address => bool) moderators;
+    mapping(address => bool) public creatorsWhiteList;
+    mapping(address => bool) public transactorsWhiteList;
+    mapping(address => bool) public moderators;
 
     event ShipmentCreated(
         uint256 shipmentId,
